@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MapsActivity"
+    android:orientation="vertical"
+    android:background="@color/coloTransparent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_map"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <Button
+            android:id="@+id/bck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/menu_arrow"
+            android:text="   RSR Pechhulp"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/colorToolbarText"
+            android:textAllCaps="false"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:padding="10sp"
+        android:id="@+id/relative"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_activity_maps"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingTop="10sp"
+            android:textColor="@color/colorToolbarText"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5sp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10sp"
+                android:src="@drawable/main_btn_tel" />
+
+            <TextView
+                android:id="@+id/phoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorToolbarText"
+                android:padding="10sp"
+                android:text="+31900 77 88 99 0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:gravity="center"
+            android:paddingTop="10sp"
+            android:text="@string/contact_activity_maps"
+            android:textColor="@color/colorToolbarText"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

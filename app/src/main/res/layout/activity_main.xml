@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/btn_rsr_pechhulp"
+        style="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="270sp"
+        android:layout_height="42sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/main_btn_warning"
+        android:fontFamily="sans-serif"
+        android:paddingStart="16dp"
+        android:text="@string/rsr"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

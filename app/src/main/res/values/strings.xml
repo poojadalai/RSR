@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RSR</string>
+    <string name="rsr">RSR Pechhulp</string>
+    <string name="dialog_title">Privacybeleid</string>
+    <string name="Bel_nu">Bel RSR Nu</string>
+    <string name="privacy">Privacybeleid</string>
+    <string name="privacydialog_message">Om deze app te gebruiken, dilent u het
+        <a href="https://www.rsr.nl/index.php?page=privacy-wetgeving">privacybeleid</a> ste accepteren.
+    </string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ann">Annuleren</string>
+    <string name="bel">Belkosten</string>
+    <string name="bel_nu">Bel nu</string>
+    <string name="info">Onthoud deze locatie voor het telefoongesprek</string>
+    <string name="phone_number">9007788990</string>
+    <string name="voor">Voor dit nummber betaalt u uw\n gebruikrlijkr brlkosten</string>
+    <string name="contact_activity_maps">Neem contect op met on RSR Nederland</string>
+    <string name="voor_activity_maps">Neem contect op met on RSR Netherlands</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_contact">Map</string>
+</resources>

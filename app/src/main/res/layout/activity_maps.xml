@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapsActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_map"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <Button
+            android:id="@+id/bck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/menu_arrow"
+            android:text="   RSR Pechhulp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/colorToolbarText"
+            android:textAllCaps="false"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <include layout="@layout/content_map" />
+
+</LinearLayout>

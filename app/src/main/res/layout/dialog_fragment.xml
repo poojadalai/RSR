@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="@color/coloTransparent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="12sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        android:layout_height="30sp"
+        android:layout_width="100sp"
+        android:gravity="center"
+        android:paddingTop="8sp"
+        android:paddingLeft="8sp"
+        android:background="#0785A8"
+        android:textColor="@color/colorToolbarText"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:text="@string/ann"
+        android:drawableLeft="@drawable/main_btn_close"
+        android:id="@+id/bnt_image"/>
+
+
+    <LinearLayout android:orientation="vertical"
+    android:background="#ABCCD313"
+    android:layout_height="203dp"
+    android:layout_width="290dp"
+    android:layout_below="@id/bnt_image">
+
+    <TextView android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorToolbarText"
+        android:text="Belkosten" android:padding="10sp"
+        android:id="@+id/title" android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorToolbarText"
+        android:text="@string/voor" android:padding="10sp"
+        android:id="@+id/des" android:layout_marginTop="7dp"
+        android:textAlignment="center"/>
+
+    <Button android:background="#0293BB"
+        android:layout_gravity="center"
+        android:layout_height="40sp"
+        android:layout_width="270dp"
+        android:textColor="@color/colorToolbarText"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:text="@string/bel_nu"
+        android:drawableLeft="@drawable/main_btn_phone"
+        android:id="@+id/bel_nu"
+        android:textSize="16sp"
+        android:layout_marginTop="38dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        style="@style/TextAppearance.AppCompat.Button"/>
+
+</LinearLayout>
+
+</RelativeLayout>
